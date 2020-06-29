@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 import './css/main.scss'
 
 class Main extends React.Component {
@@ -17,8 +18,9 @@ class Main extends React.Component {
 
     handleClick = e =>{
         e.preventDefault();
-        let words = this.state.words;
-        this.setState({words});
+        let results = document.getElementById('div2')
+        let words = <div>{this.state.method} <span>{this.state.words}</span> </div>
+        ReactDOM.render(words, results);
     }
 
     handleMethod = e =>{
@@ -40,15 +42,13 @@ class Main extends React.Component {
             </div>
 
             <div class="div3">
-            <h3>{this.state.method}</h3>
                <input type="radio" name="method" onClick={this.handleMethod} value="get"/>GET
                <input type="radio" name="method" onClick={this.handleMethod} value="post"/>POST
                <input type="radio" name="method" onClick={this.handleMethod} value="put"/>PUT
                <input type="radio" name="method" onClick={this.handleMethod} value="delete"/>DELETE
             </div>
 
-            <div class="div2">
-            <h3>{this.state.words}</h3>
+            <div id="div2">
             </div>
 
             </form>
