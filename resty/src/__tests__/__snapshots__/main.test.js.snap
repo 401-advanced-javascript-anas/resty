@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form test renders correctly 1`] = `
+<section>
+  <form>
+    <div
+      class="div1"
+    >
+      <h2>
+        URL:
+      </h2>
+      <input
+        id="url"
+        onChange={[Function]}
+        type="url"
+      />
+      <button
+        onClick={[Function]}
+      >
+        GO!
+      </button>
+    </div>
+    <div
+      class="div3"
+    >
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="get"
+      />
+      GET
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="post"
+      />
+      POST
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="put"
+      />
+      PUT
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="delete"
+      />
+      DELETE
+    </div>
+    <div
+      id="div2"
+    />
+  </form>
+</section>
+`;
+
+exports[`React Form test renders correctly 1`] = `
+<section>
+  <form>
+    <div
+      class="div1"
+    >
+      <h2>
+        URL:
+      </h2>
+      <input
+        id="url"
+        onChange={[Function]}
+        type="url"
+      />
+      <button
+        onClick={[Function]}
+      >
+        GO!
+      </button>
+    </div>
+    <div
+      class="div3"
+    >
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="get"
+      />
+      GET
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="post"
+      />
+      POST
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="put"
+      />
+      PUT
+      <input
+        name="method"
+        onClick={[Function]}
+        type="radio"
+        value="delete"
+      />
+      DELETE
+    </div>
+    <div
+      id="div2"
+    />
+  </form>
+</section>
+`;
