@@ -1,0 +1,22 @@
+header {
+  padding: 23px 0px 0px 0px;
+  background-color: #000000;
+  text-align: center;
+    h1{
+      color: seashell;
+      // margin: 0 0 0 35px;
+      font-size: 40px;
+    }
+    ul{
+      display: inline-flex;
+      padding: 13px 0 15px 0px;
+      text-decoration: none;
+  }
+    li#li2 a{
+      padding-left: 300px;
+      color: greenyellow;
+  }
+  a.active{
+    color: greenyellow;
+}
+}
