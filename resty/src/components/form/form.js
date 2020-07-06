@@ -107,16 +107,16 @@ class Form extends React.Component {
   render () {
     return (
       < main className="main">
-         <If condition={this.props.fiilForm.url}>
+         <If condition={this.props.fill.url}>
           <Then>
           <form onSubmit={this.handleSubmit}>
           <label className="url">
             <span>URL:</span>
-            <input type="text" id="url" onChange={this.handleChangeUrl}   value={this.props.fiilForm.url} />
+            <input type="text" id="url" onChange={this.handleChangeUrl}   value={this.props.fill.url} />
             <input id="submit" type="submit" value ="GO!"/>
           </label>
           <label className="method">
-          <If condition={this.props.fiilForm.method === 'get'}>
+          <If condition={this.props.fill.method === 'get'}>
           <Then>
           <input onChange={this.handleChangeMethod} defaultChecked   type="radio" id="get" name="methode" value="get" />
             <label>GET</label>
@@ -126,7 +126,7 @@ class Form extends React.Component {
           <label>GET</label>
           </Else>
         </If>
-        <If condition={this.props.fiilForm.method === 'post'}>
+        <If condition={this.props.fill.method === 'post'}>
           <Then>
           <input onChange={this.handleChangeMethod} defaultChecked type="radio" id="post" name="methode" value="post" />
             <label>POST</label>
@@ -136,7 +136,7 @@ class Form extends React.Component {
             <label>POST</label>
           </Else>
         </If>
-        <If condition={this.props.fiilForm.method === 'put'}>
+        <If condition={this.props.fill.method === 'put'}>
           <Then>
           <input onChange={this.handleChangeMethod} defaultChecked type="radio" id="put" name="methode" value="put" />
             <label>PUT</label>
@@ -146,7 +146,7 @@ class Form extends React.Component {
             <label>PUT</label>
           </Else>
         </If>
-        <If condition={this.props.fiilForm.method === 'delete'}>
+        <If condition={this.props.fill.method === 'delete'}>
           <Then>
           <input onChange={this.handleChangeMethod} defaultChecked type="radio" id="delete" name="methode" value="delete" />
             <label>DELETE</label>
@@ -158,7 +158,7 @@ class Form extends React.Component {
         </If>
             <br/>
             <label>
-          <textarea rows="15" cols="50" className="body" value ={this.props.fiilForm.body} > </textarea></label>
+          <textarea rows="15" cols="50" className="body" value ={this.props.fill.body} > </textarea></label>
           </label>
         </form>
           </Then>

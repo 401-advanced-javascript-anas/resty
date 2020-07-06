@@ -49,7 +49,7 @@ class App extends React.Component {
       <BrowserRouter>
         <Header/>
         <Route exact path='/'>
-        <Form fill={this.state.fiilForm} toggleLoading={this.toggleLoading} handler={this.handleForm} setHistory={this.setHistory} />
+        <Form fill={this.state.fill} toggleLoading={this.toggleLoading} handler={this.handleForm} setHistory={this.setHistory} />
         <Results result={this.state.result} loading={this.state.loading}/>
         </Route>
         <Route exact path='/history'>
